@@ -13,34 +13,33 @@
 </head>
 
 
-
 <body>
 
-@extends('navbar')
+    @extends('navbar')
 
     <div class="container">
     <header class="page-header">
 
-	 @section('contenu')
-		    @parent
-	 @stop
-	 
-    <p>
-        </br>
-        </br>
-        </br>
-    </p>
+        @section('contenu')
+        @parent
+        @stop
 
-    <div id="titre_principal">
-        <h1> <center> Cooking Blog </br> Les recettes sucrées </center> </h1>
-    </div>
+        <p>
+            </br>
+            </br>
+            </br>
+        </p>
+
+        <div id="titre_principal">
+            <h1> <center> Cooking Blog </br> Les recettes sucrées </center> </h1>
+        </div>
 
     </header>
     </div>
 
 
-<section class="col-md-6">
-<div class="row">
+    <section class="col-md-6">
+    <div class="row">
 
         <article>
             <h2> <center> <b>Cookies</center> </b></h2>
@@ -68,25 +67,32 @@
             5 Façonnez des cookies d’environ 10 cm de diamètre, et disposez-les sur une plaque. Ils doivent être assez espacés.</br>
             Pour finir : Enfournez-les 9 à 11 min, suivant si vous les souhaitez respectivement « extra-moelleux, moelleux ou crousti-moelleux »... Vous m’en direz des nouvelles!        </p>
         </article>
-<p>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</p>
+
+        <p>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+        </p>
 
 
-<article>
-<h2> <center> <b>La reine de Saba </center> </b></h2>
+        <article>
+
+            <h2> <center> <b>La reine de Saba </center> </b></h2>
+
             <p><b> Difficulé : </b></p>
-<div class="progress">
-<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-<span class="sr-only">80% Complete (danger)</span>
-</div>
-</div>
-<p> <b> Ingrédients / pour 6 personnes</b>  </br>
+            <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                <span class="sr-only">80% Complete (danger)</span>
+            </div>
+            </div>
+
+            <p> <b> Ingrédients / pour 6 personnes</b>  </br>
 - 125 g de chocolat noir pâtissier</br>
 - 100 g de beurre</br>
 - 100 g de sucre</br>
@@ -105,15 +111,22 @@
 7 Dès que le gâteau est cuit démoulez-le sur une grille et laissez-le refroidir complètement.
 8 30 mn avant de servir le gâteau, préparez le glaçage : faites fondre le chocolat au bain-maire avec l'eau et un peu de sucre glacé. Dès qu'il est bien lisse, versez-le sur le gâteau et bien l'étaler.
 Pour finir : Servez le gâteau entier ou coupé en parts. Pour plus de raffinement accompagnez-le de glace vanille et de rondelles de mandarines confites avec des feuilles de menthe fraîche.
-</p>
-</article>
+            </p>
 
-</div>
-</section>
+        </article>
+
+    </div>
+    </section>
+
+    <section class="col-md-1">
+    <div class="row">
+        </br>
+    </section>
+    </div>
 
 
-<section class="col-md-5">
-<div class="row">
+    <section class="col-md-5">
+    <div class="row">
 
         <aside>
 <p>
@@ -122,12 +135,17 @@ Pour finir : Servez le gâteau entier ou coupé en parts. Pour plus de raffineme
 </br>
 </br>
             <center>
-            <img src="http://icu.linter.fr/750/343662/1348369429/cookies-maison.jpg" />
+            <img src="http://icu.linter.fr/750/343662/1348369429/cookies-maison.jpg" width=50% height=50% />
             <p> <center> <a  href="/critiques"> Réagissez </a> </br>
                 <a  href="http://www.marmiton.org/recettes/recette_original-american-cookies-de-mike_39907.aspx"> Lien </a> </Center>
             </p>
             </center>
 <p>
+</br>
+</br>
+</br>
+</br>
+</br>
 </br>
 </br>
 </br>
@@ -153,11 +171,24 @@ Pour finir : Servez le gâteau entier ou coupé en parts. Pour plus de raffineme
                 </center> </p>
             </center>
         </aside>
-</section> 
-</body>
+    </section>
 
-@extends('footer')
- @section('nav')
-		    @parent
-	 @stop
+<section class="col-md-1">
+<div class="row">
+</br>
+</section>
+</div>
+
+    <section class="col-md-12">
+        </br>
+        </br>
+    <section>
+
+    @extends('footer')
+    @section('nav')
+    @parent
+    @stop
+
+
+</body>
 </html>

@@ -86,7 +86,8 @@
     </script>
 
 </head>
-	
+
+
 @extends('navbar')
 
 <body>
@@ -95,8 +96,9 @@
     <header class="page-header">
 
         @section('contenu')
-		    @parent
-		@stop
+        @parent
+        @stop
+
         <p>
             </br>
             </br>
@@ -119,73 +121,61 @@
         <center><img class = "cloudcarousel" src="/terrinee.png" alt="Flag 3 Description" title="Terrines" /></center>
 
     </div>
+    </section>
+
+
+    <section class="col-lg-12">
+
+    <div class="col-md-1">
+    <div class="row">
+        </br>
+        </br>
+    </div>
+    </div>
+
+
+    <div class="col-md-4">
+    <div class="row">
+        <aside>
+            <h2>Notre blog</h2>
+            <p>Cooking blog est un blog sur la cuisine.</br>
+            Ce blog propose dans un premier temps de recettes salées, sucrées que l'on peut trouver en cliquant sur les onglets "recettes salées" et "recettes sucrées".</br> 
+            La rebrique News affichera des actualités: un restaurant coup de coeur, un record qui marque etc.    </br>
+            </p>
+        </aside>
+    </div>
+    </div>
+
+    <div class="col-md-1">
+    <div class="row">
+        </br>
+        </br>
+    </div>
+    </div>
+
+    <div class="col-md-4">
+    <div class="row">
+    <aside>
+        <h2>Création d'un système de gestion d'objet et son API (ex : blog, bibliothèque...)</h2>
+        <p>
+Afin de réaliser ce projet, nous avons décidé de créer un blog de cuisine assez simple. Chaque utilisateur sera libre de commenter les recettes. </br>
+Les objectifs conceptuels et pratiques ont été respecté au maximum dans ce projet. </br>
+Nous nous sommes servis de laravel, nous avons utilisé sur toutes les pages des templates blade et des layout.
+Nous avons utiliser les options afficher, ajouter et supprimer.</br>
+Un défaut de notre site est de ne pas avoir gérer les utilisateurs à l’aide du module Laravel: un commentaire déjà posté peut ainsi donc être supprimé par tout le monde. Cependant, en mettant « Email:admin » et « mdp:admin », cela permet de se connecter en tant qu'admnin sans pour autant gérer nos utilisateurs. </br>
+La mise en forme a été réalisé par CSS et bootstrap. </br>
+Afin de faire le carrousel sur la page d’accueil, nous avons utilisé du javascript.</br>
+</p>
+    </aside>
+    </div>
+    </div>
 
     </section>
 
-    <div class="col-md-1">
-    <div class="row">
-        </br>
-        </br>
-    </div>
-    </div>
-
-    <div class="col-md-4">
-    <div class="row">
-        <aside>
-        <h2>Notre blog</h2>
-        <p>Le but de ce blog répond à un projet proposé dans le cadre de la 4ème année.</br>
-        Nous avons réalisé un blog de cuisine afin d'utiliser les fonctions de laravel (gestion d'une base de données), de bootstrap, de JavaScript, et pour finir de blade. </br>
-        Dans un premier onglet, on pourra trouver quelques recettes salées, dans un second onglet, des recettes sucrées. </br>
-        Si nous sommes en tant qu'administrateur, nous pouvons rajouter des recettes nous mêmes, qui se situeront dans l'onglet "New". </br>
-        Pour finir, chaque personne peut commenter dans l'onglet "Critique" ou bien en cliquant sur "Réagissez" sous les photos des recettes salées et sucrées.
-        </p>
-        </aside>
-    </div>
-    </div>
-
-    <div class="col-md-1">
-    <div class="row">
-        </br>
-        </br>
-    </div>
-    </div>
-
-    <div class="col-md-4">
-    <div class="row">
-        <aside>
-            <h2>À propos Kiba et Laura</h2>
-            <p> Nous sommes deux étudiants en 4ème année à l'ESIEA. Nous avons tous les deux intégrés l'école en première année et nous avons pris l'habitude de travailler ensemble. C'est pour cela que nous avons décidé de réaliser ce site web ensemble. </p>
-        </aside>
-    </div>
-    </div>
-
-</section>
-
-<footer class="row">
-
-
-<div class="col-md-3">
-</div>
-
-<div class="col-md-1">
-</div>
-
-<div class="col-md-2">
-</div>
-
-<div class="col-md-3">
-</br>
-<img src="/esiea.jpg" alt="Flag 1 Description" title="Flag 1 Title" width=50% height=50%  />
-</div>
-</div>
-
-<div class="col-md-2">
-</br>
-</div>
-</div>
-
-</footer>
-
+    @extends('footer')
+    @section('nav')
+    @parent
+    @stop
 
 </body>
 </html>
